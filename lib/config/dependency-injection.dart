@@ -3,4 +3,4 @@ import 'package:get_it/get_it.dart';
 
 final instance = GetIt.instance;
 
-//initModules();
+initModules(){}
