@@ -30,6 +30,8 @@ class ManagerIconSize {
   static double s6 = 6;
   static double s8 = 8;
   static double s10 = 10;
+  static double s16= 16;
+
 }
 
 class ManagerOpacity {
