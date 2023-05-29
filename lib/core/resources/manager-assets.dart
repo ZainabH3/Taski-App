@@ -2,7 +2,8 @@
  const String imagesPath = 'assets/images';
  const String jsonPath ='assets/json';
 class ManagerAssets{
-
+ static const String background = 'assets/images/background.png';
+ static const String logo ='$imagesPath/ logo.png';
  static const String vector_png ='$imagesPath/vector_png.png';
  static const String vector = '$imagesPath/vector.svg';
  static const String vector1 = '$imagesPath/vector1.png';
