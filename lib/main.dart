@@ -26,13 +26,13 @@ class MyApp extends StatelessWidget {
          ),
 
       builder: (context,child) {
-        return MaterialApp(
+        return  MaterialApp(
 
  debugShowCheckedModeBanner: false,
-          initialRoute: Routes.splashView,
+          initialRoute:   Routes.splashView,
           onGenerateRoute: RouteGenerator.getRoute,
           themeMode:_themeService.getThemeMode() ,
-          //themeMode:_themeService.getThemeData() ,
+          theme:_themeService.getThemeData() ,
 
         );
       }
