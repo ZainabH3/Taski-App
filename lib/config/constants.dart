@@ -7,10 +7,7 @@ class Constants {
   static const double elevationAppBar = 0;
   static const double elevationButton = 0;
   static const int sliderItems = 3;
-}
-
-class ConstantsPrefsKeys {
   static const String outBoardingViewedKey = 'out_boarding_viewed';
-
-
 }
+
+
