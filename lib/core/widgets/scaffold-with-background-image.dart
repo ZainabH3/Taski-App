@@ -1,10 +1,22 @@
-// import 'dart:ui';
-//
-// import '../resources/manager-colors.dart';
-//
-// class ScaffoldWithBackgroundImage{
-//     Color backgroundColor = ManagerColors.primaryColor1;
-// }
-//
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
+import '../resources/manager-assets.dart';
+import '../resources/manager-colors.dart';
+
+Scaffold scaffoldWithBackground({required Widget child}) {
+  return Scaffold(
+    backgroundColor: ManagerColors.primaryColor1,
+    resizeToAvoidBottomInset:false ,
+    body: Container(
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage(ManagerAssets.background),
+          fit: BoxFit.cover,
+        ),
+      ),
+      child: child,
+    ),
+  );
+}
   
