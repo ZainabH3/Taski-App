@@ -6,6 +6,13 @@ class ManagerHeight {
   static double h6 = SizeUtil.setHeight(6);
   static double h8 = SizeUtil.setHeight(8);
   static double h10 = SizeUtil.setHeight(10);
+  static double h20 = SizeUtil.setHeight(20);
+  static double h16 = SizeUtil.setHeight(16);
+  static double h30 = SizeUtil.setHeight(30);
+  static double h86 = SizeUtil.setHeight(86);
+  static double h26 = SizeUtil.setHeight(26);
+  static double h36 = SizeUtil.setHeight(36);
+  static double h40 = SizeUtil.setHeight(40);
 }
 
 class ManagerWidth {
@@ -14,6 +21,9 @@ class ManagerWidth {
   static double w6 = SizeUtil.setWidth(6);
   static double w8 = SizeUtil.setWidth(8);
   static double w10 = SizeUtil.setWidth(10);
+  static double w16 = SizeUtil.setWidth(16);
+  static double w34 = SizeUtil.setWidth(34);
+  static double w144 = SizeUtil.setWidth(144);
 }
 
 class ManagerRadius {
@@ -22,6 +32,7 @@ class ManagerRadius {
   static double r6 = SizeUtil.setRadius(6);
   static double r8 = SizeUtil.setRadius(8);
   static double r10 = SizeUtil.setRadius(10);
+  static double r12 = SizeUtil.setRadius(12);
 }
 
 class ManagerIconSize {
@@ -31,7 +42,8 @@ class ManagerIconSize {
   static double s8 = 8;
   static double s10 = 10;
   static double s16= 16;
-
+  static double s14= 14;
+  static double s20= 20;
 }
 
 class ManagerOpacity {
