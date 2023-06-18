@@ -30,4 +30,5 @@ class ManagerColors {
   static const Color accentColor5 = Color(0xFFFF847A);
   static const Color accentColor6 = Color(0xFFFFBCB7);
   static const Color Circle1 = Colors.deepPurple;
+  static const Color transparent = Colors.transparent;
 }
