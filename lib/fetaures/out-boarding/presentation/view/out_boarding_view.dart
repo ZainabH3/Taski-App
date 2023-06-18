@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:taski_app/config/constants.dart';
 import 'package:taski_app/core/resources/manager-assets.dart';
 import 'package:taski_app/core/resources/manager-colors.dart';
-
 import 'package:taski_app/core/resources/manager-sizes.dart';
 import 'package:taski_app/core/resources/manager-strings.dart';
-
 import '../../../../core/resources/manager-fonts.dart';
 import '../../../../core/resources/manager-styles.dart';
 import '../../../../core/widgets/main_button.dart';
@@ -25,11 +22,18 @@ class OutBoardingView extends StatelessWidget {
           ),
           child: Column(
             children: [
-              const Align(
+              Align(
                 alignment: AlignmentDirectional.centerEnd,
-                child: mainButton(),
+                child: mainButton(
+                  child: Text(
+                    ManagerStrings.skip,
+                    style: getRegularTextStyle(
+                        fontSize: ManagerFontSize.s16,
+                        color: ManagerColors.gradientColor2),
+                  ),
+                ),
               ),
-              SizedBox(height: ManagerHeight.h86),
+              SizedBox(height: ManagerHeight.h48),
               Image.asset(ManagerAssets.outBoardingIllustration1),
               SizedBox(
                 height: ManagerHeight.h26,
@@ -55,7 +59,7 @@ class OutBoardingView extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: ManagerHeight.h26,
+                height: ManagerHeight.h48,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -75,7 +79,37 @@ class OutBoardingView extends StatelessWidget {
                 }),
               ),
               SizedBox(
-                height: ManagerHeight.h40,
+                height: ManagerHeight.h26,
+              ),
+              mainButton(
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Container(
+                      width: ManagerWidth.w80,
+                      height: ManagerHeight.h80,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: ManagerColors.greyLight,
+                          width: ManagerWidth.w1,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: ManagerWidth.w50,
+                      height: ManagerHeight.h50,
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: ManagerColors.accentColor1,
+                      ),
+                      child: const Center(
+                        child: Icon(Icons.arrow_forward),
+
+                      ),
+                    ),
+                  ],
+                ),
               ),
 
             ],
