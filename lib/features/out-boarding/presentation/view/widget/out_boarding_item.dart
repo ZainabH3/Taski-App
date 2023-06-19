@@ -20,10 +20,13 @@ class OutBoardingItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset(
-         image
+        Expanded(
+          flex: 14,
+          child: Image.asset(
+           image
+          ),
         ),
-        SizedBox(height: ManagerHeight.h26),
+        const Spacer(flex: 1),
         Text(
         title,
           style: getBoldTextStyle(
@@ -32,15 +35,18 @@ class OutBoardingItem extends StatelessWidget {
           ),
           textAlign: TextAlign.center,
         ),
-        SizedBox(height: ManagerHeight.h30),
-        Text(
-         subTitle,
-          style: getTextStyle(
-            fontSize: ManagerFontSize.s16,
-            color: ManagerColors.textColorsmall,
-            weight: ManagerFontWeight.w300,
+        const Spacer(flex: 1),
+        Expanded(
+          flex: 3,
+          child: Text(
+           subTitle,
+            style: getTextStyle(
+              fontSize: ManagerFontSize.s16,
+              color: ManagerColors.textColorsmall,
+              weight: ManagerFontWeight.w300,
+            ),
+            textAlign: TextAlign.center,
           ),
-          textAlign: TextAlign.center,
         ),
       ],
     );
