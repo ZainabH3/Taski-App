@@ -1,23 +1,19 @@
+
 import 'package:get/get.dart';
 import 'package:get_it/get_it.dart';
-import '../features/out-boarding/presentation/controller/out_boarding_controller.dart';
-import '../features/splash/presentation/controller/splash_controller.dart';
+
+import '../fetaures/splash/presentation/controller/splash-controller.dart';
+
 
 final instance = GetIt.instance;
 
-initSplash() {
-  Get.put<SplashController>(SplashController());
+void initModules() {
+  initSplash() {
+    Get.put<SplashController>(SplashController());
+  }
+
+  disposeSplash() {
+    Get.delete<SplashController>();
+  }
 }
 
-disposeSplash() {
-  Get.delete<SplashController>();
-}
-
-initOutBoarding() {
-  disposeSplash();
-  Get.put<OutBoardingController>(OutBoardingController());
-}
-
-disposeOutBoarding() {
-  Get.delete<OutBoardingController>();
-}

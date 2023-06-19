@@ -1,7 +1,5 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
 
-import 'manager-colors.dart';
 import 'manager-fonts.dart';
 
 TextStyle _textStyle({
@@ -12,8 +10,8 @@ TextStyle _textStyle({
   required TextDecoration decoration,
 }) {
   return TextStyle(
-    fontFamily: fontFamily,
     fontSize: fontSize,
+    fontFamily: fontFamily,
     fontWeight: fontWeight,
     color: color,
     decoration: decoration,
@@ -26,23 +24,9 @@ TextStyle getRegularTextStyle({
   TextDecoration decoration = TextDecoration.none,
 }) {
   return _textStyle(
-    fontFamily: ManagerFonts.fontFamily,
     fontSize: fontSize,
-    fontWeight: FontWeight.normal,
-    color: color,
-    decoration: decoration,
-  );
-}
-
-TextStyle getMediumTextStyle({
-  required double fontSize,
-  required Color color,
-  TextDecoration decoration = TextDecoration.none,
-}) {
-  return _textStyle(
     fontFamily: ManagerFonts.fontFamily,
-    fontSize: fontSize,
-    fontWeight: FontWeight.w500,
+    fontWeight: ManagerFontWeight.regular,
     color: color,
     decoration: decoration,
   );
@@ -54,9 +38,23 @@ TextStyle getBoldTextStyle({
   TextDecoration decoration = TextDecoration.none,
 }) {
   return _textStyle(
-    fontFamily: ManagerFonts.fontFamily,
     fontSize: fontSize,
-    fontWeight: FontWeight.bold,
+    fontFamily: ManagerFonts.fontFamily,
+    fontWeight: ManagerFontWeight.bold,
+    color: color,
+    decoration: decoration,
+  );
+}
+
+TextStyle getMediumTextStyle({
+  required double fontSize,
+  required Color color,
+  TextDecoration decoration = TextDecoration.none,
+}) {
+  return _textStyle(
+    fontSize: fontSize,
+    fontFamily: ManagerFonts.fontFamily,
+    fontWeight: ManagerFontWeight.medium,
     color: color,
     decoration: decoration,
   );
@@ -69,20 +67,10 @@ TextStyle getTextStyle({
   FontWeight? weight,
 }) {
   return _textStyle(
-    fontFamily: ManagerFonts.fontFamily,
     fontSize: fontSize,
+    fontFamily: ManagerFonts.fontFamily,
     fontWeight: weight ?? ManagerFontWeight.medium,
     color: color,
     decoration: decoration,
-  );
-}
-
-
-
-class ManagerTextThemeDark extends TextTheme {
-  @override
-  TextStyle get displayMedium => getMediumTextStyle(
-    fontSize: ManagerFontSize.s20,
-    color: ManagerColors.textColorbig,
   );
 }
