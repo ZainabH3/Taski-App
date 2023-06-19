@@ -13,8 +13,9 @@ class ManagerColors {
   static const Color semanticColor1 = Color(0xFF00C48C);
   static const Color semanticColor2 = Color(0xFF7DDFC3);
   static const Color semanticColor3 = Color(0xFFD5F2EA);
-  static const Color textColor1 = Color(0xFF24103E);
-  static const Color textColor2 = Color(0xFF52465F);
+  static const Color textColorbig = Color(0xFF24103E);
+  static const Color greyLight = Color(0xFFD5D5D5);
+  static const Color textColorsmall = Color(0xFF52465F);
   static const Color textColor3 = Color(0xFFC2B6CF);
   static const Color textColor4 = Color(0xFFEAE9F7);
   static const Color textColor5 = Color(0xFFF7F6FB);
@@ -29,4 +30,5 @@ class ManagerColors {
   static const Color accentColor5 = Color(0xFFFF847A);
   static const Color accentColor6 = Color(0xFFFFBCB7);
   static const Color Circle1 = Colors.deepPurple;
+  static const Color transparent = Colors.transparent;
 }
