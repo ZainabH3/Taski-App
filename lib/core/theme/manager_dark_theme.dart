@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:taski_app/core/resources/manager_text_theme_light.dart';
-
 import '../../config/constants.dart';
 import '../resources/manager-colors.dart';
 import '../resources/manager-fonts.dart';
 import '../resources/manager-styles.dart';
-
 
 ThemeData managerDarkThemeData() {
   return ThemeData.dark().copyWith(
@@ -15,8 +12,6 @@ ThemeData managerDarkThemeData() {
     primaryColor: ManagerColors.primaryColor1,
     primaryColorLight: ManagerColors.primaryColor1,
 
-    // this for disabled button colors
-    // disabledColor: ManagerColors.disabledColor,
     splashColor: ManagerColors.greyLight,
     scaffoldBackgroundColor: ManagerColors.scaffoldBackgroundColorDark,
 
@@ -35,7 +30,6 @@ ThemeData managerDarkThemeData() {
     buttonTheme: const ButtonThemeData(
       shape: RoundedRectangleBorder(),
       disabledColor: ManagerColors.greyLight,
-      // buttonColor: ManagerColors.buttonColorDarK,
     ),
 
     textTheme: ManagerTextThemeDark(),
