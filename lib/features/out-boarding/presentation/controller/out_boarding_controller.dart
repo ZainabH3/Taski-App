@@ -9,11 +9,11 @@ import '../view/widget/out_boarding_item.dart';
 class OutBoardingController extends GetxController {
   late PageController pageController;
 
-  static const int firstPage = 0;
+  int firstPage = 0;
   int lastPage = 2;
-  int currentPage = firstPage;
+  int currentPage = 0;
 
-  final List PageViewItems = [
+  final List pageViewItems = [
     OutBoardingItem(
       image: ManagerAssets.outBoardingIllustration1,
       title: ManagerStrings.outBoardingTitle1,
@@ -31,9 +31,15 @@ class OutBoardingController extends GetxController {
     ),
   ];
 
+  bool isFirstedPage(int index) {
+    return currentPage == index;
+  }
+
   @override
   void onInit() {
     super.onInit();
+    currentPage = firstPage;
+    lastPage = pageViewItems.length - 1;
     pageController = PageController();
   }
 
@@ -58,7 +64,7 @@ class OutBoardingController extends GetxController {
   }
 
   void nextPage() {
-    if (isLastedPage()) {
+    if (isNotLastedPage()) {
       pageController.animateToPage(
         ++currentPage,
         duration: const Duration(seconds: Constants.outBoardingDurationTime),
@@ -68,7 +74,11 @@ class OutBoardingController extends GetxController {
     }
   }
 
-  bool isLastedPage() {
+  bool isNotLastedPage() {
     return currentPage < lastPage;
+  }
+
+  bool showBackButton() {
+    return currentPage > firstPage && currentPage <= lastPage;
   }
 }
