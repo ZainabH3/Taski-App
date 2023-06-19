@@ -1,12 +1,9 @@
-
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../config/dependency-injection.dart';
 import '../core/resources/manager-strings.dart';
-import '../fetaures/out-boarding/presentation/view/out_boarding_view.dart';
-import '../fetaures/splash/presentation/view/splash-view.dart';
+import '../features/out-boarding/presentation/view/out_boarding_view.dart';
+import '../features/splash/presentation/view/splash_view.dart';
+
 
 class Routes {
   static const String splashView = '/splash_view';
@@ -20,6 +17,7 @@ class RouteGenerator {
         initSplash();
         return MaterialPageRoute(builder: (_) => const SplashView());
       case Routes.outBoardingView:
+        initOutBoarding();
         return MaterialPageRoute(builder: (_) => const OutBoardingView());
       default:
         return unDefinedRoute();

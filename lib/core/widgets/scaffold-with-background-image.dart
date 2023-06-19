@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../resources/manager-assets.dart';
 import '../resources/manager-colors.dart';
 

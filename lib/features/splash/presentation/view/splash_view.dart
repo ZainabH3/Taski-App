@@ -1,7 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-
 import '../../../../core/resources/manager-colors.dart';
 import '../../../../core/widgets/scaffold-with-background-image.dart';
 
@@ -63,6 +60,4 @@ class SplashView extends StatelessWidget {
       ),
     ), );
   }
-
-
 }
