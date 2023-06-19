@@ -5,6 +5,7 @@ import 'package:taski_app/core/resources/manager-sizes.dart';
 
 Widget mainButton({
   required Widget child,
+  void Function()? onPressed,
   ShapeBorder? shapeBorder,
   Color? color,
   double? height,
@@ -12,7 +13,7 @@ Widget mainButton({
   double? elevation,
 }) {
   return MaterialButton(
-    onPressed: () {},
+    onPressed: onPressed?? () {},
     shape: shapeBorder ??
         RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(ManagerRadius.r12)),
