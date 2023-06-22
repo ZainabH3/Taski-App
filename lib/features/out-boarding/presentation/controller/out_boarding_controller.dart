@@ -73,9 +73,22 @@ class OutBoardingController extends GetxController {
       update();
     }
   }
+  void previousPage() {
+    if (isNotFirstedPage()) {
+      pageController.animateToPage(
+        --currentPage,
+        duration: const Duration(seconds: Constants.outBoardingDurationTime),
+        curve: Curves.fastLinearToSlowEaseIn,
+      );
+      update();
+    }
+  }
 
   bool isNotLastedPage() {
     return currentPage < lastPage;
+  }
+  bool isNotFirstedPage() {
+    return currentPage > firstPage;
   }
 
   bool showBackButton() {

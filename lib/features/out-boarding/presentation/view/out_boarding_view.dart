@@ -35,7 +35,7 @@ class OutBoardingView extends StatelessWidget {
                           mainButton(
                             minWidth: 30,
                             onPressed: () {
-                              controller.nextPage();
+                              controller.previousPage();
                             },
                             child: Container(
                               width: ManagerWidth.w50,
