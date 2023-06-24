@@ -56,6 +56,7 @@ class OutBoardingView extends StatelessWidget {
                         ],
                       ),
                     ),
+
                     Visibility(
                       visible: controller.isNotLastedPage(),
                       child: Align(

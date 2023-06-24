@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:taski_app/core/resources/manager-colors.dart';
 
 extension NonNullString on String? {
@@ -32,7 +31,7 @@ extension NonNullbool on bool {
   }
 }
 extension NonNullColor on Color? {
- Color onNull() {
+  Color onNull() {
     if (this == null) {
       return ManagerColors.transparent;
     } else {
@@ -41,18 +40,18 @@ extension NonNullColor on Color? {
   }
 }
 extension NonNullFunction on void Function()? {
-void Function() onNull() {
+  void Function() onNull() {
     if (this == null) {
-      return (){};
+      return () {};
     } else {
       return this!;
     }
   }
 }
 extension NonNullFunctionBool on bool Function()? {
-bool Function() onNull() {
+  bool Function() onNull() {
     if (this == null) {
-      return (){
+      return () {
         return false;
       };
     } else {
