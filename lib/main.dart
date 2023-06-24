@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:taski_app/config/dependency-injection.dart';
 import 'package:taski_app/core/service/theme-service.dart';
 import 'package:taski_app/routes/routes.dart';
 import 'config/constants.dart';
 
 void main() {
+  initModule();
   runApp(MyApp());
 }
 
