@@ -56,7 +56,6 @@ class OutBoardingView extends StatelessWidget {
                         ],
                       ),
                     ),
-
                     Visibility(
                       visible: controller.isNotLastedPage(),
                       child: Align(
@@ -121,8 +120,8 @@ class OutBoardingView extends StatelessWidget {
                     child: Text(
                       ManagerStrings.getStartedButton,
                       style: getBoldTextStyle(
-                          fontSize: ManagerFontSize.s16,
-                          color: ManagerColors.white,
+                        fontSize: ManagerFontSize.s16,
+                        color: ManagerColors.white,
                       ),
                     ),
                     minWidth: double.infinity,
