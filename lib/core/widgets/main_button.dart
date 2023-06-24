@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taski_app/config/constants.dart';
-import 'package:taski_app/core/resources/manager-colors.dart';
+import 'package:taski_app/core/extensions/extensions.dart';
 import 'package:taski_app/core/resources/manager-sizes.dart';
 
 Widget mainButton({
@@ -13,13 +13,13 @@ Widget mainButton({
   double? elevation,
 }) {
   return MaterialButton(
-    onPressed: onPressed?? () {},
+    onPressed: onPressed.onNull(),
     shape: shapeBorder ??
         RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(ManagerRadius.r12)),
-    color: color ?? ManagerColors.transparent,
-    minWidth: minWidth ?? ManagerWidth.w16,
-    height: height ?? ManagerHeight.h16,
+    color: color.onNull(),
+    minWidth: minWidth.onNull(),
+    height: height.onNull(),
     elevation: elevation ?? Constants.elevationButton,
     child: child,
   );
