@@ -19,6 +19,7 @@ initModule() async {
       () => AppSettingsSharedPreferences(instance()));
 }
 
+
 initSplash() {
   Get.put<SplashController>(SplashController());
 }
