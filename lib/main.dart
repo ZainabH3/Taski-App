@@ -6,8 +6,8 @@ import 'package:taski_app/core/service/theme-service.dart';
 import 'package:taski_app/routes/routes.dart';
 import 'config/constants.dart';
 
-void main() {
-  initModule();
+void main() async{
+ await initModule();
   runApp(MyApp());
 }
 
