@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:taski_app/core/resources/manager-colors.dart';
 import 'package:taski_app/core/resources/manager-sizes.dart';
 import 'package:taski_app/core/resources/manager-strings.dart';
+import 'package:taski_app/routes/routes.dart';
 import '../../../../core/resources/manager-fonts.dart';
 import '../../../../core/resources/manager-styles.dart';
 import '../../../../core/widgets/main_button.dart';
@@ -118,6 +119,9 @@ class OutBoardingView extends StatelessWidget {
                 Visibility(
                   visible: controller.isNotLastedPage(),
                   replacement: mainButton(
+                    onPressed: (){
+                      Get.offAllNamed(Routes.loginView);
+                    },
                     child: Text(
                       ManagerStrings.getStartedButton,
                       style: getBoldTextStyle(

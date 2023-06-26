@@ -2,7 +2,7 @@ import 'dart:ui';
 import 'package:taski_app/core/resources/manager-colors.dart';
 
 extension NonNullString on String? {
-  String? onNull() {
+  String onNull() {
     if (this == null) {
       return '';
     } else {
@@ -12,7 +12,7 @@ extension NonNullString on String? {
 }
 
 extension NonNulldouble on double? {
-  double? onNull() {
+  double onNull() {
     if (this == null) {
       return 0;
     } else {
@@ -21,8 +21,8 @@ extension NonNulldouble on double? {
   }
 }
 
-extension NonNullbool on bool {
-  bool? onNull() {
+extension NonNullbool on bool? {
+  bool onNull() {
     if (this == null) {
       return false;
     } else {
