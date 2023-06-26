@@ -4,7 +4,7 @@ import '../../config/constants.dart';
 
 part 'app_api.g.dart';
 
-@RestApi(baseUrl: Constants.baseurl)
+@RestApi(baseUrl: ApiConstants.baseurl)
 abstract class AppApi {
   factory AppApi(
     Dio dio, {
