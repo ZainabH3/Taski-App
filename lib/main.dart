@@ -6,8 +6,8 @@ import 'package:taski_app/core/service/theme-service.dart';
 import 'package:taski_app/routes/routes.dart';
 import 'config/constants.dart';
 
-void main() async{
- await initModule();
+void main() async {
+  await initModule();
   runApp(MyApp());
 }
 
@@ -33,5 +33,6 @@ class MyApp extends StatelessWidget {
             themeMode: _themeService.getThemeMode(),
             theme: _themeService.getThemeData(),
           );
-        });}
+        });
+  }
 }
