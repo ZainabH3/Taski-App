@@ -1,5 +1,5 @@
 class Constants {
-  static const String baseurl = 'http:// example.com';
+  static const String baseurl = 'http://tasks.actit.ps/login';
   static const double deviceWidth = 375;
   static const double deviceHeight = 812;
   static const int splashDuration = 3;
