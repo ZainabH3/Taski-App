@@ -19,4 +19,16 @@ class AppSettingsSharedPreferences {
         .getBool(ConstantsPrefsKeys.outBoardingViewedKey)
         .onNull();
   }
+
+  Future<void> setToken(String token) async {
+    await _sharedPreferences.setString(ConstantsPrefsKeys.token, token);
+  }
+
+  String getToken() {
+    return _sharedPreferences.getString(ConstantsPrefsKeys.token).onNull();
+  }
+
+  void clear() {
+    _sharedPreferences.clear();
+  }
 }
