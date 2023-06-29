@@ -20,4 +20,10 @@ class ApiConstants {
   static const String baseurl = 'http://tasks.actit.ps/login';
   static const int sendTimeOutDuration = 120;
   static const int receiveTimeOutDuration = 120;
+  static const String email = 'email';
+  static const String password = 'password';
+}
+
+class RequestConstants {
+  static const String login = '/api/auth/login';
 }
