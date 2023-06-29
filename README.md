@@ -17,5 +17,5 @@ samples, guidance on mobile development, and a full API reference.
 
 - With Json Serializable should you run this two commends:
 - `flutter pub get`
-- ` flutter pub run build_runner build --delete-conflicting-outputs`
+- `flutter pub run build_runner build --delete-conflicting-outputs`
   
