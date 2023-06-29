@@ -22,8 +22,7 @@ class ApiConstants {
   static const int receiveTimeOutDuration = 120;
   static const String email = 'email';
   static const String password = 'password';
-}
-
-class RequestConstants {
-  static const String login = '/api/auth/login';
+  static const String message = 'message';
+  static const String errors = 'errors';
+  static const String badRequest = 'bad Request';
 }
