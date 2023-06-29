@@ -12,6 +12,8 @@ class ManagerStrings{
    static const String outBoardingSubTitle3 = 'It has never been easier to complete tasks. Get started with us!';
   static const String getStartedButton = 'GET STARTED';
   static const String bearer = 'Bearer';
+  static const String error = 'error';
+  static const String badRequest = ' BadRequest';
 
 
 }
